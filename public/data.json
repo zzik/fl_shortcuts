@@ -1,28 +1,20 @@
 {
-  "windows_vs_mac_equivalent_keys": [
-    { "windows": "Alt", "mac": "option (Opt)" },
-    { "windows": "Backspace", "mac": "delete (< X)" },
-    { "windows": "Ctrl", "mac": "command (Cmd)" },
-    { "windows": "Delete", "mac": "fn+delete(< X)" },
-    { "windows": "Insert (Ins)", "mac": "fn+return" },
-    { "windows": "Windows", "mac": "command (Cmd)" }
-  ],
 
   "global_shortcuts": [
-    { "keys": "Ctrl/Cmd+Z", "action": "Undo / Redo last edit" },
-    { "keys": "Ctrl/Cmd+Alt/Opt+Z", "action": "Undo step-by-step" }
+    { "keys": "Ctrl+Z", "action": "Undo / Redo last edit" },
+    { "keys": "Ctrl+Alt+Z", "action": "Undo step-by-step" }
   ],
 
   "file_operations": [
-    { "keys": "Ctrl/Cmd+O", "action": "Open file" },
-    { "keys": "Ctrl/Cmd+S", "action": "Save file" },
-    { "keys": "Ctrl/Cmd+N", "action": "Save new version" },
-    { "keys": "Ctrl/Cmd+Shift+S", "action": "Save As..." },
-    { "keys": "Ctrl/Cmd+R", "action": "Export wave file" },
-    { "keys": "Ctrl/Cmd+Shift+R", "action": "Export mp3 file" },
-    { "keys": "Ctrl/Cmd+Shift+M", "action": "Export MIDI file" },
-    { "keys": "Alt/Opt+0,1..9", "action": "Open recent files 0..9" },
-    { "keys": "Ctrl/Cmd+Shift+H", "action": "(Re)arrange windows" }
+    { "keys": "Ctrl+O", "action": "Open file" },
+    { "keys": "Ctrl+S", "action": "Save file" },
+    { "keys": "Ctrl+N", "action": "Save new version" },
+    { "keys": "Ctrl+Shift+S", "action": "Save As..." },
+    { "keys": "Ctrl+R", "action": "Export wave file" },
+    { "keys": "Ctrl+Shift+R", "action": "Export mp3 file" },
+    { "keys": "Ctrl+Shift+M", "action": "Export MIDI file" },
+    { "keys": "Alt+0,1..9", "action": "Open recent files 0..9" },
+    { "keys": "Ctrl+Shift+H", "action": "(Re)arrange windows" }
   ],
 
   "pattern_selector_numpad": [
@@ -31,54 +23,54 @@
     { "keys": "-", "action": "Previous pattern" },
     { "keys": "F2", "action": "Open name editor for selected pattern; repeated presses randomly choose colors" },
     { "keys": "F4", "action": "Next empty pattern with naming dialog" },
-    { "keys": "Ctrl/Cmd+F4", "action": "Next empty pattern" }
+    { "keys": "Ctrl+F4", "action": "Next empty pattern" }
   ],
 
   "channel_rack_step_sequencer": [
     { "keys": "1...9, 0", "action": "Mute/Unmute first 10 Channels" },
-    { "keys": "Ctrl/Cmd+1..9,0", "action": "Solo/UnSolo first 10 Channels" },
+    { "keys": "Ctrl+1..9,0", "action": "Solo/UnSolo first 10 Channels" },
     { "keys": "Up-Arrow", "action": "Select Channel above" },
     { "keys": "Down-Arrow", "action": "Select Channel below" },
     { "keys": "Page Up", "action": "Select next Channel Group" },
     { "keys": "Page Down", "action": "Select previous Channel Group" },
-    { "keys": "Alt/Opt+Del", "action": "Delete selected Channel/s" },
-    { "keys": "Alt/Opt+Down-Arrow", "action": "Moves the selected Channel/s down" },
-    { "keys": "Alt/Opt+Up-Arrow", "action": "Moves the selected Channel/s up" },
-    { "keys": "Alt/Opt+C", "action": "Clone selected Channels" },
-    { "keys": "Alt/Opt+G", "action": "Group selected Channels" },
-    { "keys": "Alt/Opt+M", "action": "Toggle Mixer Track Selectors" },
-    { "keys": "Alt/Opt+U", "action": "Unzip selected Channel/s" },
-    { "keys": "Alt/Opt+Z", "action": "Zip selected Channel/s" },
-    { "keys": "Ctrl/Cmd+Alt/Opt+R", "action": "Force restretch of all Audio Clip Channels" },
-    { "keys": "Ctrl/Cmd+Enter", "action": "Focus Playlist" },
-    { "keys": "Ctrl/Cmd+C", "action": "Copy Channel Steps/Score" },
-    { "keys": "Ctrl/Cmd+L", "action": "Route selected Channel/s to free mixer track/s" },
-    { "keys": "Ctrl/Cmd+V", "action": "Paste Channel Steps/Score" },
-    { "keys": "Ctrl/Cmd+X", "action": "Cut Channel Steps/Score" },
+    { "keys": "Alt+Del", "action": "Delete selected Channel/s" },
+    { "keys": "Alt+Down-Arrow", "action": "Moves the selected Channel/s down" },
+    { "keys": "Alt+Up-Arrow", "action": "Moves the selected Channel/s up" },
+    { "keys": "Alt+C", "action": "Clone selected Channels" },
+    { "keys": "Alt+G", "action": "Group selected Channels" },
+    { "keys": "Alt+M", "action": "Toggle Mixer Track Selectors" },
+    { "keys": "Alt+U", "action": "Unzip selected Channel/s" },
+    { "keys": "Alt+Z", "action": "Zip selected Channel/s" },
+    { "keys": "Ctrl+Alt+R", "action": "Force restretch of all Audio Clip Channels" },
+    { "keys": "Ctrl+Enter", "action": "Focus Playlist" },
+    { "keys": "Ctrl+C", "action": "Copy Channel Steps/Score" },
+    { "keys": "Ctrl+L", "action": "Route selected Channel/s to free mixer track/s" },
+    { "keys": "Ctrl+V", "action": "Paste Channel Steps/Score" },
+    { "keys": "Ctrl+X", "action": "Cut Channel Steps/Score" },
     { "keys": "Shift+Mouse-wheel (on the Title Bar)", "action": "Changes the selected Pattern" },
     { "keys": "Shift+Mouse-wheel", "action": "Moves Selected Channel Up/Down" },
     { "keys": "Shift+Up-Arrow", "action": "Moves Channel selection Up" },
     { "keys": "Shift+Down-Arrow", "action": "Moves Channel selection Down" },
-    { "keys": "Shift+Ctrl/Cmd+Left-Arrow", "action": "Shift Steps Left" },
-    { "keys": "Shift+Ctrl/Cmd+Right-Arrow", "action": "Shift Steps Right" }
+    { "keys": "Shift+Ctrl+Left-Arrow", "action": "Shift Steps Left" },
+    { "keys": "Shift+Ctrl+Right-Arrow", "action": "Shift Steps Right" }
   ],
 
   "record_playback_transport": [
     { "keys": "Backspace", "action": "Toggle Line/None Snap" },
     { "keys": "Space", "action": "Start/Stop Playback" },
-    { "keys": "Ctrl/Cmd+Space", "action": "Start/Pause Playback (macOS: disable Spotlight shortcut first)" },
+    { "keys": "Ctrl+Space", "action": "Start/Pause Playback (macOS: disable Spotlight shortcut first)" },
     { "keys": "L", "action": "Switch Pattern/Song mode" },
     { "keys": "R", "action": "Switch On/Off recording" },
     { "keys": "0 (NumPad)", "action": "Fast forward" },
     { "keys": "/ (NumPad)", "action": "Previous bar (Song mode)" },
     { "keys": "* (NumPad)", "action": "Next bar (Song mode)" },
-    { "keys": "Ctrl/Cmd+E", "action": "Toggle Step Edit mode" },
-    { "keys": "Ctrl/Cmd+H", "action": "Stop sound (panic)" },
-    { "keys": "Ctrl/Cmd+T", "action": "Toggle typing keypad to piano keypad" },
-    { "keys": "Ctrl/Cmd+B", "action": "Toggle blend notes" },
-    { "keys": "Ctrl/Cmd+M", "action": "Toggle metronome" },
-    { "keys": "Ctrl/Cmd+P", "action": "Toggle recording metronome precount" },
-    { "keys": "Ctrl/Cmd+I", "action": "Toggle wait for input to start recording" }
+    { "keys": "Ctrl+E", "action": "Toggle Step Edit mode" },
+    { "keys": "Ctrl+H", "action": "Stop sound (panic)" },
+    { "keys": "Ctrl+T", "action": "Toggle typing keypad to piano keypad" },
+    { "keys": "Ctrl+B", "action": "Toggle blend notes" },
+    { "keys": "Ctrl+M", "action": "Toggle metronome" },
+    { "keys": "Ctrl+P", "action": "Toggle recording metronome precount" },
+    { "keys": "Ctrl+I", "action": "Toggle wait for input to start recording" }
   ],
 
   "window_navigation": [
@@ -90,29 +82,29 @@
     { "keys": "F5", "action": "Toggle Playlist" },
     { "keys": "F6", "action": "Toggle Step Sequencer" },
     { "keys": "F7", "action": "Toggle Piano roll" },
-    { "keys": "Alt/Opt+F8", "action": "Show/hide Sample Browser" },
+    { "keys": "Alt+F8", "action": "Show/hide Sample Browser" },
     { "keys": "F9", "action": "Show/hide Mixer" },
     { "keys": "F10", "action": "Show/hide MIDI settings" },
     { "keys": "F11", "action": "Show/hide song info window" },
     { "keys": "F12", "action": "Close all windows" },
-    { "keys": "Ctrl/Cmd+Shift+H", "action": "Arrange windows" }
+    { "keys": "Ctrl+Shift+H", "action": "Arrange windows" }
   ],
 
   "mixer": [
-    { "keys": "Alt/Opt+Left-Arrow / Right-Arrow", "action": "Move selected mixer track/s Left/Right" },
-    { "keys": "Alt/Opt+L", "action": "Select the Channels Linked to the selected mixer track" },
-    { "keys": "Alt/Opt+W", "action": "Toggle Peak-meter 'Wave' view" },
+    { "keys": "Alt+Left-Arrow / Right-Arrow", "action": "Move selected mixer track/s Left/Right" },
+    { "keys": "Alt+L", "action": "Select the Channels Linked to the selected mixer track" },
+    { "keys": "Alt+W", "action": "Toggle Peak-meter 'Wave' view" },
     { "keys": "Ctrl+Enter", "action": "Show/hide the mixer track properties" },
-    { "keys": "Ctrl/Cmd+A", "action": "Select all mixer tracks" },
-    { "keys": "Ctrl/Cmd+L", "action": "Link selected Channels to selected mixer track" },
-    { "keys": "Shift+Ctrl/Cmd+L", "action": "Link selected Channels STARTING From selected mixer track" },
+    { "keys": "Ctrl+A", "action": "Select all mixer tracks" },
+    { "keys": "Ctrl+L", "action": "Link selected Channels to selected mixer track" },
+    { "keys": "Shift+Ctrl+L", "action": "Link selected Channels STARTING From selected mixer track" },
     { "keys": "Shift+mouse-wheel", "action": "Move selected mixer track/s Left/Right" },
-    { "keys": "Ctrl/Cmd+Shift+Left-Click", "action": "Select multiple mixer tracks" },
-    { "keys": "Ctrl/Cmd+Shift+S", "action": "Save Mixer track state" },
+    { "keys": "Ctrl+Shift+Left-Click", "action": "Select multiple mixer tracks" },
+    { "keys": "Ctrl+Shift+S", "action": "Save Mixer track state" },
     { "keys": "F2", "action": "Rename selected mixer track" },
     { "keys": "S", "action": "Solo Current track" },
-    { "keys": "Alt/Opt+S", "action": "Alt Solo - Activate Current track and all tracks Routed TO/FROM It" },
-    { "keys": "Alt/Opt+R", "action": "Render Armed tracks to .wav" }
+    { "keys": "Alt+S", "action": "Alt Solo - Activate Current track and all tracks Routed TO/FROM It" },
+    { "keys": "Alt+R", "action": "Render Armed tracks to .wav" }
   ],
 
   "playlist_action": [
@@ -126,7 +118,7 @@
     { "keys": "Y", "action": "Playback tool" },
     { "keys": "Z", "action": "Zoom tool" },
     { "keys": "Alt", "action": "Bypass snap" },
-    { "keys": "Alt/Opt+G", "action": "Ungroup selection" },
-    { "keys": "Alt/Opt+M", "action": "Mute selection" }
+    { "keys": "Alt+G", "action": "Ungroup selection" },
+    { "keys": "Alt+M", "action": "Mute selection" }
   ]
 }
