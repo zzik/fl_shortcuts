@@ -32,11 +32,14 @@ const CategoryList = () => {
             return <tr key={idx}>
                 <td>{payload.keys}</td>
                 <td>{payload.action}</td>
-                <td>{title}</td>
+                {/* <td>{title}</td> */}
             </tr>
         })
 
-        return content
+        return <>
+            {content}
+            <br/>
+        </>
 
     })
   }
@@ -56,7 +59,6 @@ const CategoryList = () => {
           <tr>
             <th>Shortcut</th>
             <th>Action</th>
-            <th>Category</th>
           </tr>
         </thead>
 
