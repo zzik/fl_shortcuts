@@ -1,4 +1,5 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
+import "./custom.css"
 import Display from "./components/Display";
 
 function App() {

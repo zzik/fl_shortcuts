@@ -1,0 +1,31 @@
+#global_shortcuts {
+  background-color: rgba(255, 0, 0, 0.377);
+}
+#file_operations {
+  background-color: rgba(129, 0, 129, 0.35);
+  
+}
+#pattern_selector_numpad {
+  background-color: rgba(126, 41, 206,0.35);
+  
+}
+#channel_rack_step_sequencer {
+  background-color: rgba(238, 130, 238, 0.568);
+  
+}
+#record_playback_transport {
+  background-color: rgba(0, 0, 255, 0.432);
+  
+}
+#window_navigation {
+  background-color: rgba(173, 216, 230, 0.37);
+  
+}
+#mixer {
+  background-color: rgba(0, 128, 0, 0.37);
+  
+}
+#playlist_action {
+  background-color: rgba(172, 255, 47, 0.336);
+  
+}

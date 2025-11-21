@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { fetchData } from "../utils/fetchData";
-import { Container, Table, Spinner } from "react-bootstrap";
+import { Container, Table, Spinner, Row, Col } from "react-bootstrap";
 
 const CategoryList = () => {
   const [shortcuts, setShortcuts] = useState();
@@ -9,46 +9,58 @@ const CategoryList = () => {
     fetchData().then(setShortcuts);
   }, []);
 
-  //   if (!shortcuts) {
-  //     return (
-  //       <Container className="mt-4 text-center">
-  //         <Spinner animation="border" />
-  //       </Container>
-  //     );
-  //   }
-
-  //   let data = Object.entries(shortcuts);
-
-  let data
+  let data;
 
   if (shortcuts) {
-    // console.log(Object.entries(shortcuts))
-    data = Object.entries(shortcuts)
-    data = data.map((element, i) => {
-        let title = element[0]
-        let content = element[1]
+    data = Object.entries(shortcuts);
+    data = data.map((element) => {
+      let title = element[0];
+      let content = element[1];
 
-        content = content.map((payload, idx) => {
-            return <tr key={idx}>
-                <td>{payload.keys}</td>
-                <td>{payload.action}</td>
-                {/* <td>{title}</td> */}
-            </tr>
-        })
+      content = content.map((payload, idx) => {
 
-        return <>
-            {content}
-            <br/>
-        </>
+        // switch (title) {
+        //   case "global_shortcuts":
+        //     title = "bg-primary";
+        //     break;
+        //   case "file_operations":
+        //     title = "bg-secondary";
+        //     break;
+        //   case "pattern_selector_numpad":
+        //     title = "bg-success";
+        //     break;
+        //   case "channel_rack_step_sequencer":
+        //     title = "bg-danger";
+        //     break;
+        //   case "record_playback_transport":
+        //     title = "bg-warning";
+        //     break;
+        //   case "window_navigation":
+        //     title = "bg-info";
+        //     break;
+        //   case "mixer":
+        //     title = "bg-light";
+        //     break;
+        //   case "playlist_action":
+        //     title = "bg-dark";
+        //     break;
 
-    })
+        //   default:
+        //     break;
+            
+        // }
+
+        return (
+          <tr key={idx}>
+            <td id={title}>{payload.keys}</td>
+            <td>{payload.action}</td>
+          </tr>
+        );
+      });
+
+      return <>{content}</>;
+    });
   }
-  //   shortcuts.map((entry, idx) => (
-  //     <tr key={idx}>
-  //       <td>{entry.shortcut}</td>
-  //       <td>{entry.action}</td>
-  //     </tr>
-  //   ));
 
   return (
     <Container className="mt-4">
