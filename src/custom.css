@@ -29,3 +29,7 @@
   background-color: rgba(172, 255, 47, 0.336);
   
 }
+
+tr {
+  border: 1px solid black;
+}
